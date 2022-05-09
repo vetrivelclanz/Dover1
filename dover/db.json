@@ -1,0 +1,80 @@
+{
+  "Dover": [
+    {
+      "powersoakorientation": "24",
+      "id": 1
+    },
+    {
+      "powersoakorientation": "20",
+      "id": 2
+    },
+    {
+      "powersoakorientation": "34",
+      "id": 3
+    },
+    {
+      "powersoakorientation": "40",
+      "id": 4
+    },
+    {
+      "powersoakorientation": "40",
+      "id": 5
+    },
+    {
+      "powersoakorientation": "40",
+      "id": 6
+    },
+   
+    {
+      "powersoakorientation": "24",
+      "Rims": "20",
+      "BackSplash": "15",
+      "EndSplashRight": "25",
+      "EndSplashLeft": "10",
+      "UnitWidth": "25",
+      "UnitLength": "30",
+      "DeckHeight": "50.5",
+      "PSXXX": "",
+      "Voltage": "",
+      "GenX": "",
+      "Heater": "",
+      "CrossRails": "",
+      "FootType": "",
+      "DrainBallValue": "",
+      "DryingRack": "",
+      "ChemicalDispenser": true,
+      "SpecialCrating": true,
+      "SoilDrainBoardLength": "10",
+      "DisposerUnit": true,
+      "ScrapperUnit": true,
+      "WashSinkLength": "20",
+      "WashSinkWidth": "",
+      "WashSinkDepth": "",
+      "SheetPanRack": "",
+      "AWI": "",
+      "RinseSinkLength": "30",
+      "RinseSinkWidth": "",
+      "RinseSinkDepth": "",
+      "RinseSinkOverFlow": true,
+      "SanitizeSinkOverFlow": true,
+      "SanitizeSinkLength": "40",
+      "SanitizeSinkWidth": "",
+      "SanitizeSinkDepth": "",
+      "CleanDrainBoardLength": "50",
+      "ScrapperUnitLength": "60",
+      "ScrapperUnitWidth": "",
+      "ScrapperUnitDepth": "",
+      "DrainBoard": "",
+      "DrainType": "",
+      "DisposerUnitLength": "70",
+      "DisposerUnitWidth": "",
+      "DisposerUnitDepth": "",
+      "DisposerUnitDrainBoard": "",
+      "DisposerDrain": "",
+      "WaterInlet": "",
+      "Type": "",
+      "Quantity": "",
+      "id": 8
+    }
+  ]
+}

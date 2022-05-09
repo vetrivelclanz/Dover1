@@ -1,5 +1,5 @@
 <div class="container">
-  <form [formGroup]="form" (ngSubmit)="submit()">
+  <form [formGroup]="form" (ngSubmit)="submit()"  #userForm="ngForm"class="form-group">
    <div class="row">
     <div class="head" >
       <img [src]="myimage" class="img"> 
@@ -16,7 +16,7 @@
       <div class="part2">
         <div class="form-group pt">
           <label for="powersoakorientation" class="col-lg-4 col-md-4 ">Power Soak Orientation</label>
-          <input  formControlName="powersoakorientation" class="col-lg-8 col-md-8 " />
+          <input  formControlName="powersoakorientation" class="col-lg-8 col-md-8 " type="text" [(ngModel)]="use.powersoakorientation" />
         </div>
       </div>
       <div class="part3">
@@ -40,25 +40,25 @@
                   
                     <div class="form-group my-2">
                       <label for="Rims" class=" col-lg-6 col-md-6 ">Rims</label>
-                     <select class=" col-lg-6 col-md-6 "   formControlName="Rims">
+                     <select class=" col-lg-6 col-md-6 "  [(ngModel)]="use.Rims" formControlName="Rims">
                        <option value="20">20</option>
                      </select>
                     </div>
                     <div class="form-group my-2">
                       <label for="BackSplash" class="col-lg-6 col-md-6 ">Back Splash</label>
-                      <select class=" col-lg-6 col-md-6 " formControlName="BackSplash">
+                      <select class=" col-lg-6 col-md-6 "[(ngModel)]="use.BackSplash" formControlName="BackSplash">
                         <option value="15">15</option>
                       </select>
                     </div>
                     <div class="form-group my-2">
                       <label for="EndSplashRight" class="col-lg-6 col-md-6 ">End Splash Right</label>
-                      <select class=" col-lg-6 col-md-6 " formControlName="EndSplashRight">
+                      <select class=" col-lg-6 col-md-6 " [(ngModel)]="use.EndSplashRight" formControlName="EndSplashRight">
                         <option value="25">25</option>
                       </select>
                     </div>
                     <div class="form-group my-2">
                       <label for="EndSplashLeft" class="col-lg-6 col-md-6 ">End Splash Left</label>
-                      <select class=" col-lg-6 col-md-6 " formControlName="EndSplashLeft">
+                      <select class=" col-lg-6 col-md-6 "[(ngModel)]="use.EndSplashLeft" formControlName="EndSplashLeft">
                         <option value="10">10</option>
                       </select>
                     </div>
@@ -66,19 +66,19 @@
                 <div class=" col-lg-6 col-md-6  uni">
                   <div class="form-group my-2">
                     <label for="UnitWidth" class="col-lg-6 col-md-6 ">Unit Width</label>
-                    <select class=" col-lg-6 col-md-6 " formControlName="UnitWidth">
+                    <select class=" col-lg-6 col-md-6 "[(ngModel)]="use.UnitWidth" formControlName="UnitWidth">
                       <option value="25">25</option>
                     </select>
                   </div>
                   <div class="form-group my-2">
                     <label for="UnitLength" class="col-lg-6 col-md-6 ">Unit Length</label>
-                    <select class=" col-lg-6 col-md-6 " formControlName="UnitLength">
+                    <select class=" col-lg-6 col-md-6 "[(ngModel)]="use.UnitLength" formControlName="UnitLength">
                       <option value="30">30</option>
                     </select>
                   </div>
                   <div class="form-group my-2">
                     <label for="DeckHeight" class="col-lg-6 col-md-6 ">Deck Height</label>
-                    <select class=" col-lg-6 col-md-6 " formControlName="DeckHeight">
+                    <select class=" col-lg-6 col-md-6 "[(ngModel)]="use.DeckHeight" formControlName="DeckHeight">
                       <option value="50.5">50.5</option>
                     </select>
                   </div>
@@ -100,49 +100,49 @@
                 <div>
               <div class="form-group my-2">
                 <label for="PSXXX" class="col-lg-3 col-md-3 ">PS-XXX</label>
-                <select class="col-lg-6 col-md-6 " formControlName="PSXXX">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.PSXXX" formControlName="PSXXX">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="Voltage" class="col-lg-3 col-md-3 ">Voltage</label>
-                <select class="col-lg-6 col-md-6 "formControlName="Voltage">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.Voltage" formControlName="Voltage">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="GenX" class="col-lg-3 col-md-3 ">Gen-X</label>
-                <select class="col-lg-6 col-md-6 " formControlName="GenX">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.GenX" formControlName="GenX">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="Heater" class="col-lg-3 col-md-3 ">Heater</label>
-                <select class="col-lg-6 col-md-6 " formControlName="Heater">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.Heater" formControlName="Heater">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="CrossRails" class="col-lg-3 col-md-3 ">Cross Rails</label>
-                <select class="col-lg-6 col-md-6 " formControlName="CrossRails">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.CrossRails" formControlName="CrossRails">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="FootType" class="col-lg-3 col-md-3 ">Foot Type</label>
-                <select class="col-lg-6 col-md-6 " formControlName="FootType">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.FootType" formControlName="FootType">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="DrainBallValue" class="col-lg-3 col-md-3 ">Drain Ball Value</label>
-                <select class="col-lg-6 col-md-6 " formControlName="DrainBallValue">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DrainBallValue" formControlName="DrainBallValue">
                   <option></option>
                 </select>
               </div>
               <div class="form-group my-3">
                 <label for="DryingRack" class="col-lg-3 col-md-3 ">Drying Rack</label>
-                <select class="col-lg-6 col-md-6 " formControlName="DryingRack">
+                <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DryingRack" formControlName="DryingRack">
                   <option></option>
                 </select>
               </div>
@@ -150,21 +150,21 @@
             <div class="display">
               <div class="col-lg-4 col-md-4 ">
                 <div class="form-group py-1">
-                 <input type="radio" formControlName="DualTempering">
+                 <input type="radio"[(ngModel)]="use.DualTempering" formControlName="DualTempering">
                  <label for="DualTempering">Dual Tempering</label>
                 </div>
                 <div class="form-group py-1">
-                  <input type="radio" formControlName="ChemicalDispenser">
+                  <input type="radio"[(ngModel)]="use.ChemicalDispenser" formControlName="ChemicalDispenser">
                   <label for="ChemicalDispenser">Chemical Dispenser</label>
                  </div>
               </div>
               <div class="col-lg-4 col-md-4 ">
               <div class="form-group py-1">
-                <input type="radio" formControlName="UtensilBasket">
+                <input type="radio" [(ngModel)]="use.UtensilBasket" formControlName="UtensilBasket">
                 <label for="UtensilBasket">Utensil Basket</label>
                </div>
                <div class="form-group py-1">
-                 <input type="radio" formControlName="SpecialCrating">
+                 <input type="radio"[(ngModel)]="use.SpecialCrating" formControlName="SpecialCrating">
                  <label for="SpecialCrating">Special Crating</label>
                 </div>
               </div>
@@ -199,7 +199,7 @@
                       <div class="content-value" *ngIf="id === 'SoilDrainBoard'">
                         <div class="form-group my-2">
                           <label for="SoilDrainBoardLength" class="col-lg-3 col-md-3 ">Length</label>
-                          <select class="col-lg-4 col-md-4 " formControlName="SoilDrainBoardLength">
+                          <select class="col-lg-4 col-md-4 " [(ngModel)]="use.SoilDrainBoardLength" formControlName="SoilDrainBoardLength">
                             <option value="10">10</option>
                           </select>
                         </div>
@@ -208,13 +208,13 @@
                         <div class="tai">
                           <div class="col-lg-5 col-md-6  " >
                              <div class="form-group my-2">
-                               <input type="radio" formControlName="ScrapperUnit" >
+                               <input type="radio"[(ngModel)]="use.ScrapperUnit" formControlName="ScrapperUnit" >
                                <label for="ScrapperUnit" >Scrapper Unit</label>
                              </div>
                           </div>
                           <div class="col-lg-5 col-md-6  ">
                            <div class="form-group my-2">
-                             <input type="radio" formControlName="DisposerUnit">
+                             <input type="radio"[(ngModel)]="use.DisposerUnit" formControlName="DisposerUnit">
                              <label for="DisposerUnit">Disposer Unit</label>
                            </div>
                           </div>
@@ -225,19 +225,19 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="WashSinkLength" class="col-lg-6 col-md-6 ">Length</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="WashSinkLength">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.WashSinkLength" formControlName="WashSinkLength">
                              <option value="20">20</option>
                            </select>
                          </div>
                          <div class="form-group my-2">
                           <label for="WashSinkWidth" class="col-lg-6 col-md-6 ">Width</label>
-                          <select class="col-lg-6 col-md-6 " formControlName="WashSinkWidth">
+                          <select class="col-lg-6 col-md-6 "[(ngModel)]="use.WashSinkWidth" formControlName="WashSinkWidth">
                             <option></option>
                           </select>
                         </div>
                         <div class="form-group my-2">
                           <label for="WashSinkDepth" class="col-lg-6 col-md-6 ">Depth</label>
-                          <select class="col-lg-6 col-md-6 " formControlName="WashSinkDepth">
+                          <select class="col-lg-6 col-md-6 "[(ngModel)]="use.WashSinkDepth" formControlName="WashSinkDepth">
                             <option></option>
                           </select>
                         </div>
@@ -245,13 +245,13 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="SheetPanRack" class="col-lg-6 col-md-6 ">Sheet Pan Rack</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="SheetPanRack">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.SheetPanRack" formControlName="SheetPanRack">
                              <option></option>
                            </select>
                          </div>
                          <div class="form-group my-2">
                           <label for="AWI" class="col-lg-6 col-md-6 ">AWI</label>
-                          <select class="col-lg-6 col-md-6 " formControlName="AWI">
+                          <select class="col-lg-6 col-md-6 "[(ngModel)]="use.AWI" formControlName="AWI">
                             <option></option>
                           </select>
                         </div>
@@ -263,13 +263,13 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="RinseSinkLength" class="col-lg-6 col-md-6 ">Length</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="RinseSinkLength">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.RinseSinkLength" formControlName="RinseSinkLength">
                              <option value="30">30</option>
                            </select>
                          </div>
                          <div class="form-group my-2">
                           <label for="RinseSinkWidth" class="col-lg-6 col-md-6 ">Width</label>
-                          <select class="col-lg-6 col-md-6 " formControlName="RinseSinkWidth">
+                          <select class="col-lg-6 col-md-6 "[(ngModel)]="use.RinseSinkWidth" formControlName="RinseSinkWidth">
                             <option></option>
                           </select>
                         </div>
@@ -277,7 +277,7 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="RinseSinkDepth" class="col-lg-6 col-md-6 ">Depth</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="RinseSinkDepth">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.RinseSinkDepth" formControlName="RinseSinkDepth">
                              <option></option>
                            </select>
                          </div>
@@ -286,7 +286,7 @@
                       <div class="radi">
                         
                           <div class="form-group my-2">
-                            <input type="radio" formControlName="RinseSinkOverFlow">
+                            <input type="radio"[(ngModel)]="use.RinseSinkOverFlow" formControlName="RinseSinkOverFlow">
                             <label for="RinseSinkOverFlow">OverFlow</label>
                           </div>
                         
@@ -298,13 +298,13 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="SanitizeSinkLength" class="col-lg-6 col-md-6 ">Length</label>
-                           <select class="col-lg-6 col-md-6 "formControlName="SanitizeSinkLength">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.SanitizeSinkLength" formControlName="SanitizeSinkLength">
                              <option value="40">40</option>
                            </select>
                          </div>
                          <div class="form-group my-2">
                           <label for="SanitizeSinkWidth" class="col-lg-6 col-md-6 ">Width</label>
-                          <select class="col-lg-6 col-md-6 " formControlName="SanitizeSinkWidth">
+                          <select class="col-lg-6 col-md-6 "[(ngModel)]="use.SanitizeSinkWidth" formControlName="SanitizeSinkWidth">
                             <option></option>
                           </select>
                         </div>
@@ -312,7 +312,7 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="SanitizeSinkDepth" class="col-lg-6 col-md-6 ">Depth</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="SanitizeSinkDepth">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.SanitizeSinkDepth" formControlName="SanitizeSinkDepth">
                              <option></option>
                            </select>
                          </div>
@@ -321,7 +321,7 @@
                       <div class="radi">
                         
                           <div class="form-group my-2">
-                            <input type="radio" formControlName="SanitizeSinkOverFlow">
+                            <input type="radio"[(ngModel)]="use.SanitizeSinkOverFlow" formControlName="SanitizeSinkOverFlow">
                             <label for="SanitizeSinkOverFlow">OverFlow</label>
                           </div>
                         
@@ -331,7 +331,7 @@
                     <div>
                       <div class="form-group my-2">
                         <label for="CleanDrainBoardLength" class="col-lg-3 col-md-3 ">Length</label>
-                        <select class="col-lg-4 col-md-4 " formControlName="CleanDrainBoardLength">
+                        <select class="col-lg-4 col-md-4 "[(ngModel)]="use.CleanDrainBoardLength" formControlName="CleanDrainBoardLength">
                           <option value="50">50</option>
                         </select>
                       </div>
@@ -358,19 +358,19 @@
                <div class=" col-lg-6 col-md-6  uni">
                    <div class="form-group my-2">
                      <label for="ScrapperUnitLength" class="col-lg-6 col-md-6 ">Length</label>
-                    <select class="col-lg-6 col-md-6 "  formControlName="ScrapperUnitLength">
+                    <select class="col-lg-6 col-md-6 " [(ngModel)]="use.ScrapperUnitLength" formControlName="ScrapperUnitLength">
                       <option value="60">60</option>
                     </select>
                    </div>
                    <div class="form-group my-2">
                      <label for="ScrapperUnitWidth" class="col-lg-6 col-md-6 ">Width</label>
-                     <select class="col-lg-6 col-md-6 " formControlName="ScrapperUnitWidth">
+                     <select class="col-lg-6 col-md-6 "[(ngModel)]="use.ScrapperUnitWidth" formControlName="ScrapperUnitWidth">
                        <option></option>
                      </select>
                    </div>
                    <div class="form-group my-2">
                      <label for="ScrapperUnitDepth" class="col-lg-6 col-md-6 ">Depth</label>
-                     <select class="col-lg-6 col-md-6 " formControlName="ScrapperUnitDepth">
+                     <select class="col-lg-6 col-md-6 "[(ngModel)]="use.ScrapperUnitDepth" formControlName="ScrapperUnitDepth">
                        <option></option>
                      </select>
                    </div>
@@ -379,13 +379,13 @@
                <div class=" col-lg-6 col-md-6 uni">
                  <div class="form-group my-2">
                    <label for="DrainBoard" class="col-lg-6 col-md-6 ">Drain Board</label>
-                   <select class="col-lg-6 col-md-6 " formControlName="DrainBoard">
+                   <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DrainBoard" formControlName="DrainBoard">
                      <option></option>
                    </select>
                  </div>
                  <div class="form-group my-2">
                    <label for="DrainType" class="col-lg-6 col-md-6 ">Drain Type</label>
-                   <select class="col-lg-6 col-md-6 " formControlName="DrainType">
+                   <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DrainType" formControlName="DrainType">
                      <option></option>
                    </select>
                  </div>
@@ -406,19 +406,19 @@
                <div class=" col-lg-6 col-md-6  uni">
                    <div class="form-group my-2">
                      <label for="DisposerUnitLength" class="col-lg-6 col-md-6 ">Length</label>
-                    <select class="col-lg-6 col-md-6 "  formControlName="DisposerUnitLength">
+                    <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DisposerUnitLength"  formControlName="DisposerUnitLength">
                       <option value="70">70</option>
                     </select>
                    </div>
                    <div class="form-group my-2">
                      <label for="DisposerUnitWidth" class="col-lg-6 col-md-6 ">Width</label>
-                     <select class="col-lg-6 col-md-6 " formControlName="DisposerUnitWidth">
+                     <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DisposerUnitWidth" formControlName="DisposerUnitWidth">
                        <option></option>
                      </select>
                    </div>
                    <div class="form-group my-2">
                      <label for="DisposerUnitDepth" class="col-lg-6 col-md-6 ">Depth</label>
-                     <select class="col-lg-6 col-md-6 " formControlName="DisposerUnitDepth">
+                     <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DisposerUnitDepth" formControlName="DisposerUnitDepth">
                        <option></option>
                      </select>
                    </div>
@@ -427,19 +427,19 @@
                <div class=" col-lg-6 col-md-6  uni">
                  <div class="form-group my-2">
                    <label for="DrainBoard" class="col-lg-6 col-md-6 ">Drain Board</label>
-                   <select class="col-lg-6 col-md-6 " formControlName="DisposerUnitDrainBoard">
+                   <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DisposerUnitDrainBoard" formControlName="DisposerUnitDrainBoard">
                      <option></option>
                    </select>
                  </div>
                  <div class="form-group my-2">
                    <label for="WaterInlet" class="col-lg-6 col-md-6 ">Water Inlet</label>
-                   <select class="col-lg-6 col-md-6 " formControlName="WaterInlet">
+                   <select class="col-lg-6 col-md-6 "[(ngModel)]="use.WaterInlet" formControlName="WaterInlet">
                      <option></option>
                    </select>
                  </div>
                  <div class="form-group my-2">
                   <label for="DisposerDrain" class="col-lg-6 col-md-6 ">Disposer Drain</label>
-                  <select class="col-lg-6 col-md-6 " formControlName="DisposerDrain">
+                  <select class="col-lg-6 col-md-6 "[(ngModel)]="use.DisposerDrain" formControlName="DisposerDrain">
                     <option></option>
                   </select>
                 </div>
@@ -469,7 +469,7 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="Type" class="col-lg-6 col-md-6 ">Type</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="Type">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.Type" formControlName="Type">
                              <option></option>
                            </select>
                          </div>
@@ -477,7 +477,7 @@
                         <div class="col-lg-6 col-md-6 ">
                          <div class="form-group my-2">
                            <label for="Quantity" class="col-lg-6 col-md-6 ">Quantity</label>
-                           <select class="col-lg-6 col-md-6 " formControlName="Quantity">
+                           <select class="col-lg-6 col-md-6 "[(ngModel)]="use.Quantity" formControlName="Quantity">
                              <option></option>
                            </select>
                          </div>

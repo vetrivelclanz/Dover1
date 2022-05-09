@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,84 @@ export class AppComponent {
   UtensilBasket:boolean=false;
   SpecialCrating:boolean=false;
 
-  form = new FormGroup({
+  use:any;
+  private url="http://localhost:3000/Dover";
+  
+  constructor( private http:HttpClient ){
+    this.use={
+      powersoakorientation:'',
+      Rims:'',
+      BackSplash:'',
+      EndSplashRight:'',
+      EndSplashLeft:'',
+      UnitWidth:'',
+      UnitLength:'',
+      DeckHeight:'',
+  
+      //    Rectangle
+      PSXXX:'',
+      Voltage:'',
+      GenX:'',
+      Heater:'',
+      CrossRails:'',
+      FootType:'',
+      DrainBallValue:'',
+      DryingRack:'',
+  
+      DualTempering:true,
+      ChemicalDispenser:true,
+      UtensilBasket:true,
+      SpecialCrating:true,
+    
+      //              
+      //  
+      SoilDrainBoardLength:'',
+      
+      DisposerUnit:true,
+      ScrapperUnit:true,
+  
+      WashSinkLength:'',
+      WashSinkWidth:'',
+      WashSinkDepth:'',
+      SheetPanRack:'',
+      AWI:'',
+      
+      RinseSinkLength:'',
+      RinseSinkWidth:'',
+      RinseSinkDepth:'',
+      RinseSinkOverFlow:true,
+  
+      SanitizeSinkOverFlow:true,
+      SanitizeSinkLength:'',
+      SanitizeSinkWidth:'',
+      SanitizeSinkDepth:'',
+  
+  
+  
+      CleanDrainBoardLength:'',
+  
+      ScrapperUnitLength:'',
+      ScrapperUnitWidth:'',
+      ScrapperUnitDepth:'',
+      DrainBoard:'',
+      DrainType:'',
+  
+      DisposerUnitLength:'',
+      DisposerUnitWidth:'',
+      DisposerUnitDepth:'',
+      DisposerUnitDrainBoard:'',
+      DisposerDrain:'',
+      WaterInlet:'',
+      
+     
+      //PreRinseFaucets
+      Type:'',
+      Quantity:'',
+    }
+
+  }
+
+ form = new FormGroup({
     powersoakorientation: new FormControl(),
     Rims: new FormControl(),
     BackSplash: new FormControl(),
@@ -86,16 +164,23 @@ export class AppComponent {
     Type:new FormControl(),
     Quantity:new FormControl(),
   });
+
   
- 
-  
-  submit(){
+
+  /*submit(){
     console.log(this.form.value);
-  }
+  }*/
 
   id:any='SoilDrainBoard';
   tabChange(ids:any){
     this.id=ids;
  console.log(this.id)
+  }
+
+  submit(){
+    this.http.post(this.url,this.use).subscribe((result)=>{
+      alert("value saved successfully");
+      console.log(this.use);
+    });
   }
 }
