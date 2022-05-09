@@ -1,0 +1,183 @@
+.img{
+    width: 200px;
+    height: 60px;
+}
+.strai{
+    background-color: #004b8e;
+    height: 69px;
+    margin: 10px;
+}
+.strai h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+}
+.pt{
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+.pt label{
+    text-align: center ;
+    padding-right: 25px;
+    font-weight: bold;
+}
+.part3{
+    display: flex;
+    margin: 10px;
+    
+}
+.dis2{
+    padding: 3px;
+}
+.dis1{
+    padding: 3px;
+}
+
+.unit1{
+    margin: 1px;
+    height: 42px;
+    background-color: #edf3ff;
+}
+.unit1 h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.unit2{
+    display: flex;
+ 
+}
+.unit2 label
+{
+    padding: 10px;
+}
+.Rectangle{
+   
+    background-color: #edf3ff;
+}
+.con{
+    margin-right: 50%;
+    padding: 20px;
+}
+.display{
+    display: flex;
+}
+.Sinks1{
+    margin: 0 auto;
+    height: 42px;
+    background-color: #edf3ff;
+}
+.Sinks1 h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.ScrapperUnit1{
+    margin: 0 auto;
+    height: 42px;
+    background-color: #edf3ff;
+}
+.ScrapperUnit1 h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.ScrapperUnit2{
+    display: flex;
+}
+.DisposerUnit1{
+    margin: 0 auto;
+    height: 42px;
+    background-color: #edf3ff;
+}
+.DisposerUnit1 h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.DisposerUnit2{
+    display: flex;
+}
+.Faucets1{
+    margin: 0 auto;
+    height: 42px;
+    background-color: #edf3ff;
+}
+.Faucets1 h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.part4{
+    text-align: center;
+    align-items: center;
+}
+.tai{
+    display: flex;
+}
+.radi{
+    align-items: center;
+    text-align: center;
+}
+.row{
+    margin: 10px;
+}
+.Sinks2{
+   width: 100%;
+   font-size: 14px;
+}
+.gfg {
+    
+    padding: 1px;
+    
+} 
+.butn{
+    background-color: #004b8e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+/**********************************Tab*********************************************/
+.tam{
+    display: flex;
+}
+.tab ul{
+    padding: 1px;
+   
+    display: inline-block;
+    border-radius: 2px;
+    margin: 0;
+    width: 100%;
+}
+.tab ul li{
+    display: inline-block;
+    list-style-type: none;
+    
+    color: rgb(32, 27, 27);
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: bold;
+    cursor:pointer ;
+    text-align: center;
+    position: relative;
+    width: 16%;
+   
+}
+.tab ul li:last-child{
+    border-right: none;
+}
+.tab ul li:hover{
+ border-bottom: 5px solid #004b8e;
+}
+.content{
+    
+    padding: 20px;
+    
+}
+.content-value h1{
+    font-size: 22px;
+    font-weight: 600;
+}
